@@ -1,4 +1,46 @@
 ﻿<Properties StartupConfiguration="{1D48B3E8-F999-41E2-B397-2F7E3CC02D07}|https">
-  <MonoDevelop.Ide.ItemProperties.NZWalks FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NZWalks/Controllers/RegionsController.cs">
+    <Files>
+      <File FileName="NZWalks/Program.cs" Line="12" Column="1" />
+      <File FileName="NZWalks/Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+      <File FileName="NZWalks/WeatherForecast.cs" />
+      <File FileName="NZWalks/Models/Domain/Difficulty.cs" Line="8" Column="1" />
+      <File FileName="NZWalks/Models/Domain/Region.cs" Line="11" Column="6" />
+      <File FileName="NZWalks/Models/Domain/Walk.cs" Line="6" Column="7" />
+      <File FileName="NZWalks/Data/NZWalksDbContext.cs" Line="4" Column="1" />
+      <File FileName="NZWalks/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="NZWalks/appsettings.json" Line="14" Column="1" />
+      <File FileName="NZWalks/Migrations/NZWalksDbContextModelSnapshot.cs" />
+      <File FileName="NZWalks/Migrations/20250530130235_intialll.cs" />
+      <File FileName="NZWalks/Controllers/RegionsController.cs" Line="22" Column="4" />
+      <File FileName="NZWalks/Models/DTO/RegionDTO.cs" Line="9" Column="52" />
+      <File FileName="NZWalks/Models/DTO/DifficultyDTO.cs" Line="8" Column="1" />
+      <File FileName="NZWalks/Models/DTO/WalkDTO.cs" Line="21" Column="1" />
+      <File FileName="NZWalks/Models/DTO/RequestRegionDTO.cs" Line="6" Column="1" />
+      <File FileName="NZWalks/Models/DTO/UpdateRegionRequestDTO.cs" Line="11" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NZWalks" expanded="True">
+            <Node name="NZWalks">
+              <Node name="Controllers" expanded="True">
+                <Node name="RegionsController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Domain" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.NZWalks PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
