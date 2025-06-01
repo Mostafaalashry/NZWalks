@@ -1,11 +1,8 @@
 ﻿using System;
-using NZWalks.Models.Domain;
-
 namespace NZWalks.Models.DTO
 {
-	public class WalkDTO
+	public class AddWalkDTO
 	{
-        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public double LengthKm { get; set; }
@@ -13,8 +10,6 @@ namespace NZWalks.Models.DTO
 
         public Guid DifficultyId { get; set; }
         public Guid RegionId { get; set; }
-
-      
     }
 }
 

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "yjbrOf/jsLEiUohyvL1fa9TsxEwD2pJ1iEh6biSonq8MC8RdJWIqgaaIa5TSUnVfSHxl2tPqfDrT2EdgxmjvGA==",
+  "dgSpecHash": "3XTO4Ce0UOkOjqENyoYiNXWyokpZ1LTaYQmOjKkkTWHGp3uGjYYfM7fHIv0YKrVxHCm29cigr2+EKjscZ++2Yg==",
   "success": true,
   "projectFilePath": "/Users/mostafaalashry397gmail.com/Documents/C#/NZWalks/NZWalks/NZWalks/NZWalks.csproj",
   "expectedPackageFiles": [
+    "/Users/mostafaalashry397gmail.com/.nuget/packages/automapper/9.0.0/automapper.9.0.0.nupkg.sha512",
+    "/Users/mostafaalashry397gmail.com/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/7.0.0/automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/mostafaalashry397gmail.com/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/mostafaalashry397gmail.com/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/mostafaalashry397gmail.com/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
@@ -62,6 +64,8 @@
     "/Users/mostafaalashry397gmail.com/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
     "/Users/mostafaalashry397gmail.com/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/mostafaalashry397gmail.com/.nuget/packages/system.reflection/4.3.0/system.reflection.4.3.0.nupkg.sha512",
+    "/Users/mostafaalashry397gmail.com/.nuget/packages/system.reflection.emit/4.3.0/system.reflection.emit.4.3.0.nupkg.sha512",
+    "/Users/mostafaalashry397gmail.com/.nuget/packages/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "/Users/mostafaalashry397gmail.com/.nuget/packages/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg.sha512",
     "/Users/mostafaalashry397gmail.com/.nuget/packages/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "/Users/mostafaalashry397gmail.com/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
