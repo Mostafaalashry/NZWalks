@@ -5,7 +5,6 @@ namespace NZWalks.Models.Domain
 	{
 		public Guid Id { get; set; }
         public string Name { get; set; }
-
     }
 }
 
