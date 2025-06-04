@@ -7,6 +7,8 @@ using NZWalks.Data;
 using NZWalks.Models.Domain;
 using NZWalks.Models.DTO;
 using NZWalks.Repository;
+using System.ComponentModel.DataAnnotations;
+using NZWalks.CustomActionFilters;
 
 namespace NZWalks.Controllers
 {
@@ -49,45 +51,52 @@ namespace NZWalks.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRegion([FromBody] RequestRegionDTO request)
         {
-            if (request == null)
+            if (ModelState.IsValid)
+            {
+                // Map DTO to domain model
+                var region = mapper.Map<Region>(request);
+
+                // Create region in the database
+                var createdRegion = await regionRepository.CreateAsync(region);
+
+                // Map domain model to response DTO
+                var response = mapper.Map<RegionDTO>(createdRegion);
+
+                // Return 201 Created with location header pointing to the newly created resource
+                return CreatedAtAction(
+                    nameof(GetById),
+                    new { id = response.Id },
+                    response
+                );
+            }
+
+          else
             {
                 return BadRequest("Request body cannot be null.");
             }
 
-            // Map DTO to domain model
-            var region = mapper.Map<Region>(request);
-
-            // Create region in the database
-            var createdRegion = await regionRepository.CreateAsync(region);
-
-            // Map domain model to response DTO
-            var response = mapper.Map<RegionDTO>(createdRegion);
-
-            // Return 201 Created with location header pointing to the newly created resource
-            return CreatedAtAction(
-                nameof(GetById),
-                new { id = response.Id },
-                response
-            );
+         
         }
         //
         //
         [HttpPut]
         [Route("{id:Guid}")]
+        [ValidateModel]
         public async Task<IActionResult> UpdateRegion([FromRoute] Guid id, [FromBody] UpdateRegionRequestDTO request)
         {
-            if (request is null) return BadRequest("Request body cannot be null.");
+           
+                // Map DTO to domain model
+                var updatedRegion = mapper.Map<Region>(request);
 
-            // Map DTO to domain model
-            var updatedRegion = mapper.Map<Region>(request);
+                // Attempt to update
+                var result = await regionRepository.UpdateAsync(id, updatedRegion);
 
-            // Attempt to update
-            var result = await regionRepository.UpdateAsync(id, updatedRegion);
+                if (result is null) return NotFound($"Region with ID {id} was not found.");
 
-            if (result is null) return NotFound($"Region with ID {id} was not found.");
+                // Map result to DTO
+                return Ok(mapper.Map<RegionDTO>(result));
+          
 
-            // Map result to DTO
-            return Ok(mapper.Map<RegionDTO>(result));
         }
 
         [HttpDelete]

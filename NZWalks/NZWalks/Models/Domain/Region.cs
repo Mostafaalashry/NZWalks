@@ -10,4 +10,3 @@ namespace NZWalks.Models.Domain
 
     }
 }
-

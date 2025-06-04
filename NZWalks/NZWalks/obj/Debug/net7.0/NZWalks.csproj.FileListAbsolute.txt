@@ -73,6 +73,6 @@
 /Users/mostafaalashry397gmail.com/Documents/C#/NZWalks/NZWalks/NZWalks/obj/Debug/net7.0/NZWalks.pdb
 /Users/mostafaalashry397gmail.com/Documents/C#/NZWalks/NZWalks/NZWalks/obj/Debug/net7.0/NZWalks.genruntimeconfig.cache
 /Users/mostafaalashry397gmail.com/Documents/C#/NZWalks/NZWalks/NZWalks/obj/Debug/net7.0/ref/NZWalks.dll
-/Users/mostafaalashry397gmail.com/Documents/C#/NZWalks/NZWalks/NZWalks/obj/Debug/net7.0/NZWalks.csproj.CopyComplete
 /Users/mostafaalashry397gmail.com/Documents/C#/NZWalks/NZWalks/NZWalks/bin/Debug/net7.0/AutoMapper.dll
 /Users/mostafaalashry397gmail.com/Documents/C#/NZWalks/NZWalks/NZWalks/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/mostafaalashry397gmail.com/Documents/C#/NZWalks/NZWalks/NZWalks/obj/Debug/net7.0/NZWalks.csproj.CopyComplete

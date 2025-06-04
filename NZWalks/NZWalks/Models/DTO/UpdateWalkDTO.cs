@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NZWalks.Models.DTO
 {
-	public class AddWalkDTO
-	{
+	public class UpdateWalkDTO
+    {
         [Required]
         [MaxLength(100)]
         public string Name { get; set; }
@@ -12,7 +12,7 @@ namespace NZWalks.Models.DTO
         [MaxLength(200)]
         public string Description { get; set; }
         [Required]
-        [Range(0,200)]
+        [Range(0, 200)]
         public double LengthKm { get; set; }
 
         public string WalkImageUrl { get; set; }

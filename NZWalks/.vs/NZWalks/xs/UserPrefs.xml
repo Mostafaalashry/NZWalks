@@ -6,28 +6,49 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="NZWalks/Models/Domain/Difficulty.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NZWalks/Controllers/WalkController.cs">
     <Files>
-      <File FileName="NZWalks/Program.cs" />
-      <File FileName="NZWalks/Controllers/WeatherForecastController.cs" />
+      <File FileName="NZWalks/Program.cs" Line="20" Column="59" />
       <File FileName="NZWalks/Models/Domain/Difficulty.cs" Line="11" Column="1" />
-      <File FileName="NZWalks/Models/Domain/Region.cs" Line="11" Column="6" />
-      <File FileName="NZWalks/Models/Domain/Walk.cs" Line="15" Column="1" />
+      <File FileName="NZWalks/Models/Domain/Region.cs" />
+      <File FileName="NZWalks/Models/Domain/Walk.cs" Line="4" Column="2" />
       <File FileName="NZWalks/Data/NZWalksDbContext.cs" />
       <File FileName="NZWalks/appsettings.Development.json" />
       <File FileName="NZWalks/appsettings.json" />
-      <File FileName="NZWalks/Migrations/NZWalksDbContextModelSnapshot.cs" />
+      <File FileName="NZWalks/Migrations/NZWalksDbContextModelSnapshot.cs" Line="1" Column="1" />
       <File FileName="NZWalks/Migrations/20250530130235_intialll.cs" />
-      <File FileName="NZWalks/Controllers/RegionsController.cs" Line="115" Column="30" />
+      <File FileName="NZWalks/Controllers/RegionsController.cs" Line="14" Column="3" />
       <File FileName="NZWalks/Models/DTO/RegionDTO.cs" />
-      <File FileName="NZWalks/Models/DTO/DifficultyDTO.cs" />
-      <File FileName="NZWalks/Models/DTO/WalkDTO.cs" />
-      <File FileName="NZWalks/Models/DTO/RequestRegionDTO.cs" />
+      <File FileName="NZWalks/Models/DTO/DifficultyDTO.cs" Line="1" Column="1" />
+      <File FileName="NZWalks/Models/DTO/WalkDTO.cs" Line="6" Column="2" />
+      <File FileName="NZWalks/Models/DTO/RequestRegionDTO.cs" Line="1" Column="1" />
       <File FileName="NZWalks/Models/DTO/UpdateRegionRequestDTO.cs" />
+      <File FileName="NZWalks/Repository/IRegionRepository.cs" Line="8" Column="5" />
+      <File FileName="NZWalks/Repository/RegionRepository.cs" Line="16" Column="1" />
+      <File FileName="NZWalks/Mappings/AutoMapperProfile.cs" Line="16" Column="36" />
+      <File FileName="NZWalks/Repository/IWalkRepository.cs" Line="8" Column="1" />
+      <File FileName="NZWalks/Models/DTO/AddWalkDTO.cs" Line="12" Column="43" />
+      <File FileName="NZWalks/Controllers/WalkController.cs" Line="51" Column="2" />
+      <File FileName="NZWalks/Repository/WalkRepository.cs" Line="14" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__" />
+        <State name="__root__">
+          <Node name="NZWalks">
+            <Node name="NZWalks" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Mappings" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Domain" expanded="True" />
+                <Node name="DTO" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Repository" expanded="True" />
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

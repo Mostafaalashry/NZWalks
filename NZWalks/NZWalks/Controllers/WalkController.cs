@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using NZWalks.Models.Domain;
 using NZWalks.Models.DTO;
 using NZWalks.Repository;
-
+using NZWalks.CustomActionFilters;
 namespace NZWalks.Controllers
 {
     [Route("[controller]")]
@@ -24,7 +24,8 @@ namespace NZWalks.Controllers
         }
 
 		[HttpPost]
-		public async Task<IActionResult> CreateAsync([FromBody]AddWalkDTO addWalkDTO)
+        [ValidateModel]
+        public async Task<IActionResult> CreateAsync([FromBody]AddWalkDTO addWalkDTO)
 		{
 			if (addWalkDTO == null) return NoContent();
 
@@ -37,16 +38,65 @@ namespace NZWalks.Controllers
             return Ok(walkDTO);
         }
 
-    }
-}
+        [HttpGet]
+        public async Task<IActionResult> GetAll(
+            [FromQuery] string? region,
+            [FromQuery] string? difficulity,
+            [FromQuery] double? minLength,
+            [FromQuery] double? maxLength,
+            [FromQuery] string? name,
+            [FromQuery] bool? isAsyindingLength,
+            [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 3)
+        {
+          
+            var WalkDomain = await walkRepository1.GetAllAsync(region,difficulity,minLength,maxLength,name, isAsyindingLength,pageNumber,pageSize);
 
-/*
- {
-  "name": "string",
-  "description": "string",
-  "lengthKm": 0,
-  "walkImageUrl": "string",
-  "difficultyId": "A1B2C3D4-E5F6-7890-ABCD-1234567890AB",
-  "regionId": "89c021fd-b781-4c30-2ea1-08dd9fa8c51f"
-}
- */
+            var walkDTO = mapper.Map <List< WalkDTO >> (WalkDomain);
+            
+            return Ok(walkDTO);
+        }
+        [HttpGet]
+        [Route("{Id:Guid}")]
+        public async Task<IActionResult> GetById([FromRoute] Guid Id)
+        {
+            //get region from  db
+            var region = await walkRepository1.GetByIdAsync(Id);
+            //map result to dto
+            return region is null ? NotFound() : Ok(mapper.Map<RegionDTO>(region));
+        }
+        [HttpDelete]
+        [Route("{Id:Guid}")]
+        public async Task<IActionResult> DeleteById([FromRoute] Guid Id)
+        {
+            //get region from  db
+            var region = await walkRepository1.DeleteAsync(Id);
+            //map result to dto
+            return region is null ? NotFound() : Ok(mapper.Map<RegionDTO>(region));
+        }
+
+        [HttpPut]
+        [Route("{id:Guid}")]
+        [ValidateModel]
+        public async Task<IActionResult> UpdateWalk([FromRoute] Guid id, [FromBody] UpdateWalkDTO request)
+        {
+          
+
+                // Map DTO to domain model
+                var updatedWalk = mapper.Map<Walk>(request);
+
+                // Attempt to update
+                var result = walkRepository1.UpDateAsync(id, updatedWalk);
+
+                if (result is null) return NotFound($"Region with ID {id} was not found.");
+
+                // Map result to DTO
+                return Ok(mapper.Map<WalkDTO>(result));
+            }
+           
+          
+
+        }
+    }
+
+
