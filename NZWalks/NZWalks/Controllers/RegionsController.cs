@@ -9,11 +9,13 @@ using NZWalks.Models.DTO;
 using NZWalks.Repository;
 using System.ComponentModel.DataAnnotations;
 using NZWalks.CustomActionFilters;
+using Microsoft.AspNetCore.Authorization;
 
 namespace NZWalks.Controllers
 {
 
-    [Route("[controller]")]
+    [Authorize]
+    [Route("api/[controller]")]
     [ApiController]
     public class RegionsController:ControllerBase
 	{

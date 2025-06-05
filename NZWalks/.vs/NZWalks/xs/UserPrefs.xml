@@ -2,49 +2,51 @@
   <MonoDevelop.Ide.ItemProperties.NZWalks PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="NZWalks/Controllers/WalkController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NZWalks/Controllers/RegionsController.cs">
     <Files>
-      <File FileName="NZWalks/Program.cs" Line="20" Column="59" />
-      <File FileName="NZWalks/Models/Domain/Difficulty.cs" Line="11" Column="1" />
-      <File FileName="NZWalks/Models/Domain/Region.cs" />
-      <File FileName="NZWalks/Models/Domain/Walk.cs" Line="4" Column="2" />
-      <File FileName="NZWalks/Data/NZWalksDbContext.cs" />
+      <File FileName="NZWalks/Program.cs" Line="21" Column="1" />
+      <File FileName="NZWalks/Models/Domain/Difficulty.cs" />
+      <File FileName="NZWalks/Models/Domain/Region.cs" Line="12" Column="2" />
+      <File FileName="NZWalks/Models/Domain/Walk.cs" Line="7" Column="6" />
+      <File FileName="NZWalks/Data/NZWalksDbContext.cs" Line="45" Column="21" />
       <File FileName="NZWalks/appsettings.Development.json" />
       <File FileName="NZWalks/appsettings.json" />
-      <File FileName="NZWalks/Migrations/NZWalksDbContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="NZWalks/Migrations/NZWalksDbContextModelSnapshot.cs" />
       <File FileName="NZWalks/Migrations/20250530130235_intialll.cs" />
-      <File FileName="NZWalks/Controllers/RegionsController.cs" Line="14" Column="3" />
+      <File FileName="NZWalks/Controllers/RegionsController.cs" Line="16" Column="17" />
       <File FileName="NZWalks/Models/DTO/RegionDTO.cs" />
-      <File FileName="NZWalks/Models/DTO/DifficultyDTO.cs" Line="1" Column="1" />
-      <File FileName="NZWalks/Models/DTO/WalkDTO.cs" Line="6" Column="2" />
-      <File FileName="NZWalks/Models/DTO/RequestRegionDTO.cs" Line="1" Column="1" />
-      <File FileName="NZWalks/Models/DTO/UpdateRegionRequestDTO.cs" />
+      <File FileName="NZWalks/Models/DTO/DifficultyDTO.cs" />
+      <File FileName="NZWalks/Models/DTO/WalkDTO.cs" Line="16" Column="1" />
+      <File FileName="NZWalks/Models/DTO/RequestRegionDTO.cs" Line="5" Column="1" />
+      <File FileName="NZWalks/Models/DTO/UpdateRegionRequestDTO.cs" Line="18" Column="2" />
       <File FileName="NZWalks/Repository/IRegionRepository.cs" Line="8" Column="5" />
-      <File FileName="NZWalks/Repository/RegionRepository.cs" Line="16" Column="1" />
-      <File FileName="NZWalks/Mappings/AutoMapperProfile.cs" Line="16" Column="36" />
-      <File FileName="NZWalks/Repository/IWalkRepository.cs" Line="8" Column="1" />
-      <File FileName="NZWalks/Models/DTO/AddWalkDTO.cs" Line="12" Column="43" />
-      <File FileName="NZWalks/Controllers/WalkController.cs" Line="51" Column="2" />
-      <File FileName="NZWalks/Repository/WalkRepository.cs" Line="14" Column="22" />
+      <File FileName="NZWalks/Repository/RegionRepository.cs" Line="57" Column="1" />
+      <File FileName="NZWalks/Mappings/AutoMapperProfile.cs" Line="20" Column="1" />
+      <File FileName="NZWalks/Repository/IWalkRepository.cs" Line="16" Column="29" />
+      <File FileName="NZWalks/Models/DTO/AddWalkDTO.cs" Line="6" Column="15" />
+      <File FileName="NZWalks/Controllers/WalkController.cs" Line="11" Column="14" />
+      <File FileName="NZWalks/Repository/WalkRepository.cs" Line="58" Column="34" />
+      <File FileName="NZWalks/Models/DTO/UpdateWalkDTO.cs" Line="23" Column="1" />
+      <File FileName="NZWalks/CustomActionFilters/ValidateModelAttribute.cs" Line="4" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NZWalks">
+          <Node name="NZWalks" expanded="True">
             <Node name="NZWalks" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="RegionsController.cs" selected="True" />
+              </Node>
+              <Node name="CustomActionFilters" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Mappings" expanded="True" />
-              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="Domain" expanded="True" />
-                <Node name="DTO" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
               <Node name="Repository" expanded="True" />
             </Node>
           </Node>

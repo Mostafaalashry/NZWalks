@@ -6,10 +6,13 @@ using NZWalks.Models.Domain;
 using NZWalks.Models.DTO;
 using NZWalks.Repository;
 using NZWalks.CustomActionFilters;
+using Microsoft.AspNetCore.Authorization;
+
 namespace NZWalks.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class WalkController:ControllerBase
 	{
         private readonly IMapper mapper;
@@ -39,6 +42,7 @@ namespace NZWalks.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll(
             [FromQuery] string? region,
             [FromQuery] string? difficulity,
